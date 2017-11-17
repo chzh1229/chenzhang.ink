@@ -1,3 +1,3 @@
-[submodule "mysite/themes/minimal"]
-	path = mysite/themes/minimal
+[submodule "themes/minimal"]
+	path = themes/minimal
 	url = https://github.com/calintat/minimal.git
