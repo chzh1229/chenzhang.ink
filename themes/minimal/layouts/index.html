@@ -1,15 +1,18 @@
 {{ partial "header" . }}
 
-<main>
+<body class="background">
+    <main>
 
-    <div class="intro">
+        <div class="intro">
 
-        <h1 style="font-size:60px">{{ .Site.Title }}</h1>
+            <h1>{{ .Site.Title }}</h1>
 
-        <h2>{{ markdownify .Site.Params.Description }}</h2>
+            <h2>{{ markdownify .Site.Params.Description }}</h2>
 
-    </div>
+        </div>
 
-</main>
+    </main>
+</body>
+
 
 {{ partial "footer" . }}
