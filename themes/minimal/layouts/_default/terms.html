@@ -1,12 +1,13 @@
 {{ partial "header" . }}
+<body class="background">
+    <main>
 
-<main>
+        <h2>{{ .Title }}</h2>
 
-    <h2>{{ .Title }}</h2>
+        {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
 
-    {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} {{ end }}
-
-</main>
+    </main>
+</body>
 
 {{ partial "paginator" . }}
 
